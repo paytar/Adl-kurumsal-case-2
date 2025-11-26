@@ -1,0 +1,44 @@
+.employee-grid {
+  display: grid;
+  gap: 1.5rem;
+
+  @media (min-width: 1200px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  @media (min-width: 768px) and (max-width: 1199px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.employee-card {
+  background: #fff;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+  }
+
+  .name {
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+  }
+
+  .department {
+    font-size: 0.875rem;
+    color: #555;
+  }
+
+  .status {
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    color: #888;
+  }
+}

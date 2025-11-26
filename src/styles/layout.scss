@@ -1,0 +1,24 @@
+.layout-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.layout-main {
+  padding: 24px;
+  overflow-y: auto;
+}
+.layout {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+
+  &[dir="rtl"] {
+    flex-direction: row-reverse;
+
+    .layout-content {
+      text-align: right;
+    }
+  }
+}
