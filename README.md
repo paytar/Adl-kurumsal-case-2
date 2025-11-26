@@ -1,0 +1,1 @@
+# Adl-Kurumsal-Case-2
